@@ -1,0 +1,18 @@
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none;
+      }
+      #hamburger-nav {
+        display: flex;
+      }
+}
+/* Media query for smaller screens */
+@media (max-width: 800px) {
+    .project-details {
+        flex-direction: column;
+    }
+    .project-box {
+        width: 100%;
+    }
+}
+
