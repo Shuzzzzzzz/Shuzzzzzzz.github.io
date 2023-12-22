@@ -62,9 +62,9 @@ a {
 
 a:hover {
   transition: box-shadow 0.4s ease;
-  background-color: #45a049;
+  background-color: gray;
   border-radius: 2rem;
-  box-shadow: 0 4px 8px #45a049;
+  box-shadow: 0 4px 8px gray;
 }
 
 .logo {
@@ -173,16 +173,23 @@ section {
   height: fit-content;
 }
 
-.icon-img{
+.icon-img {
   cursor: pointer;
-  width:50px;
-  animation: shake 2s linear infinite;
+  width: 50px;
+  animation: shine 2s linear infinite;
 }
-@keyframes shake {
-  0%, 100% { transform: translateX(0); }
-  10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
-  20%, 40%, 60%, 80% { transform: translateX(5px); }
+
+@keyframes shine {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
 }
+
 
 
 .profile-image {
@@ -242,9 +249,9 @@ section {
 .icon:hover {
   transform: scale(1.4);
   transition: box-shadow 0.4s ease;
-  background-color: #45a049;
+  background-color: gray;
   border-radius: 2rem;
-  box-shadow: 0 4px 8px #45a049;
+  box-shadow: 0 4px 8px gray;
 }
 
 #about {
@@ -331,7 +338,7 @@ section {
 
 .skill-image:hover{
   border-radius: 2rem;
-  box-shadow: 0 4px 8px #45a049;
+  box-shadow: 0 4px 8px gray;
   transform: scale(1);
 }
 
@@ -372,10 +379,10 @@ section {
 }
 
 .project-button:hover {
-  background-color: #45a049;
+  background-color: gray;
   transition: box-shadow 0.4s ease;
   border-radius: 2rem;
-  box-shadow: 0 4px 8px #45a049;
+  box-shadow: 0 4px 8px gray;
 }
 
 #projects {
@@ -466,9 +473,9 @@ textarea{
 
 .contact-button:hover{
   transition: box-shadow 0.4s ease;
-  background-color: #45a049;
+  background-color: gray;
   border-radius: 2rem;
-  box-shadow: 0 4px 8px #45a049;
+  box-shadow: 0 4px 8px gray;
   border-radius: 2rem;
   transform: scale(1.1);
 }
